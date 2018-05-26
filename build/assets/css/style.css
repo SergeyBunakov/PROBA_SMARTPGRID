@@ -1,0 +1,759 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'fontello';
+  src: url("../fonts/fontello.eot?93205877");
+  src: url("../fonts/fontello.eot?93205877#iefix") format("embedded-opentype"), url("../fonts/fontello.woff2?93205877") format("woff2"), url("../fonts/fontello.woff?93205877") format("woff"), url("../fonts/fontello.ttf?93205877") format("truetype"), url("../fonts/fontello.svg?93205877#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?93205877#fontello') format('svg');
+  }
+}
+*/
+[class^="icon-"]:before, [class*=" icon-"]:before {
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+    line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+    margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-cog-outline:before {
+    content: '\e800';
+}
+
+/* '' */
+.icon-rss-outline:before {
+    content: '\e801';
+}
+
+/* '' */
+.icon-menu:before {
+    content: '\e802';
+}
+
+/* '' */
+.icon-facebook:before {
+    content: '\e803';
+}
+
+/* '' */
+.icon-twitter:before {
+    content: '\e804';
+}
+
+/* '' */
+.icon-ok-outline:before {
+    content: '\e805';
+}
+
+/* '' */
+.icon-cancel:before {
+    content: '\e806';
+}
+
+/* '' */
+.icon-vk:before {
+    content: '\e807';
+}
+
+/* '' */
+.icon-skype-outline:before {
+    content: '\e808';
+}
+
+/* '' */
+.icon-phone-outline:before {
+    content: '\e809';
+}
+
+/* '' */
+.icon-odnoklassniki:before {
+    content: '\f30c';
+}
+
+/* '' */
+.icon-linkedin:before {
+    content: '\f31a';
+}
+
+/* '' */
+body, div, dl, dt, dd, ul, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, input, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+fieldset, img, abbr {
+    border: 0;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+ul li {
+    list-style: none;
+}
+
+caption, th {
+    text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+sup {
+    vertical-align: text-top;
+}
+
+sub {
+    vertical-align: text-bottom;
+}
+
+input, textarea, select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+legend {
+    color: #000;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main {
+    display: block;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+html {
+    font-size: 16px;
+  /*
+	.xs(font-size, 14px);*/
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+@media screen and (max-width: 780px) {
+    .wrapper {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.navigation {
+    background: #f56262;
+}
+
+.nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.nav__logo {
+    width: 180px;
+}
+
+.nav__logo li {
+    display: inline;
+    list-style-type: none;
+    margin-left: 15px;
+}
+
+.nav__logo li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 1.25rem;
+}
+
+.nav__logo li p {
+    color: #ffffff;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.nav__menu {
+    width: 820px;
+}
+
+.nav__menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: end;
+    align-content: end;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: end;
+}
+
+.nav__menu li {
+    display: inline;
+    list-style-type: none;
+    margin-left: 40px;
+    padding: 5px 10px;
+}
+
+.nav__menu li:hover {
+    background: #232323;
+}
+
+.nav__menu li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.nav__menu li a:hover {
+    cursor: pointer;
+    border-bottom: 2px solid #ffffff;
+}
+
+.main__header {
+    background: #eb4f4e;
+}
+
+.main__header-content {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.main__header-content h1 {
+    font-size: 3rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.main__header-content p {
+    font-size: 1.25rem;
+    color: #ffffff;
+}
+
+h2, .h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 20px 0;
+}
+
+@media screen and (max-width: 560px) {
+    h2, .h2 {
+        font-size: 2rem;
+    }
+}
+
+.h2sub {
+    text-align: center;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.profit {
+    background: #232323;
+    padding: 15px 0;
+}
+
+.profit__title {
+    color: #fff;
+}
+
+.profit__subtitle {
+    color: #6cc372;
+}
+
+.profitItems {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+.profitItem {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: calc(25% - 30px);
+  /* .to(380px, {
+			width: ~"calc(100% - @{offset})";
+	});
+ */
+}
+
+@media screen and (max-width: 960px) {
+    .profitItem {
+        width: calc(41.66667% - 30px);
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .profitItem {
+        width: calc(83.33333% - 30px);
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .profitItem {
+        width: calc(100% - 30px);
+    }
+}
+
+.profitItem__img {
+    border-radius: 50%;
+}
+
+.profitItem__img-main {
+    -webkit-box-shadow: 0 0 10px #fff;
+    box-shadow: 0 0 10px #fff;
+}
+
+.profitItem__subtitle {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 3px 0;
+}
+
+.profitItem__text {
+    font-size: 16px;
+    color: #d94948;
+}
+
+.humans {
+    background: #6cc372;
+    padding: 10px 0;
+}
+
+.humans h2 {
+    color: #232323;
+}
+
+.humans .h2sub {
+    color: #fff;
+}
+
+.humans .items {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    justify-content: center;
+}
+
+.humans .items .item {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: calc(25% - 30px);
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    text-align: center;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 960px) {
+    .humans .items .item {
+        width: calc(41.66667% - 30px);
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .humans .items .item {
+        width: calc(50% - 30px);
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .humans .items .item {
+        width: calc(83.33333% - 30px);
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .humans .items .item {
+        width: calc(100% - 30px);
+    }
+}
+
+.humans .items .item img {
+    margin: 10px auto;
+    width: 90%;
+}
+
+.humans .items .item .subtitle {
+    color: #6cc372;
+    font-size: 24px;
+    margin: 10px;
+}
+
+@media screen and (max-width: 560px) {
+    .humans .items .item .subtitle {
+        background: #f90;
+        color: #fff;
+        border-radius: 5px;
+        padding: 5px 0;
+    }
+}
+
+.humans .items .item .job {
+    margin: auto 10px 10px 10px;
+}
+
+.humans .items .item .follow {
+    background: #6cc372;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.portfolio {
+    background: #f0f0f0;
+    padding: 10px 0;
+    padding-bottom: 180px;
+}
+
+.portfolio h2 {
+    color: #232323;
+}
+
+.portfolio .h2sub {
+    color: #6cc372;
+}
+
+.portfolio .items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 780px) {
+    .portfolio .items {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+}
+
+.portfolio .items .item {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    margin-left: 15px;
+    margin-right: 15px;
+      /* какой дизайн, такой и код*/
+    width: calc(22.08333% - 30px);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+@media screen and (max-width: 780px) {
+    .portfolio .items .item {
+        width: calc(41.66667% - 30px);
+    }
+}
+
+.portfolio .items .item img {
+    margin: 10px auto;
+    width: 100%;
+}
+
+.portfolio .items .item .txt {
+    color: #232323;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 960px) {
+    .portfolio {
+        padding-bottom: 20px;
+    }
+}
+
+.pricing .h2sub {
+    color: #f56262;
+}
+
+.pricing .items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    margin-top: -156px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 960px) {
+    .pricing .items {
+        margin-top: 40px;
+    }
+}
+
+.pricing .items .item {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: calc(33.33333% - 30px);
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 960px) {
+    .pricing .items .item {
+        width: calc(66.66667% - 30px);
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .pricing .items .item {
+        width: calc(100% - 30px);
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .pricing .items .item {
+        margin-top: 40px;
+    }
+}
+
+.pricing .items .item .title {
+    background: #fff;
+    padding: 0 30px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 960px) {
+    .pricing .items .item .title {
+        background: #6cc372;
+        color: #fff;
+    }
+}
+
+.pricing .items .item ul li {
+    background: #f0f0f0;
+    padding: 15px 0;
+    border-bottom: 1px solid #232323;
+}
+
+.pricing .items .item .price {
+    background: #f56262;
+    color: #fff;
+    padding: 10px 15px;
+}
+
+.pricing .items .item .price .cur {
+    font-size: 1.5em;
+}
+
+.pricing .items .item .price .val {
+    font-size: 3em;
+}
+
+.pricing .items .item .price .per {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.pricing .items .item .price a {
+    color: #232323;
+    text-decoration: none;
+    background: #fff;
+    padding: 5px 20px;
+    border-radius: 5px;
+    margin-left: auto;
+}
+
+footer .items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+footer .items .item {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: calc(33.33333% - 30px);
+    background: #aaa;
+    min-height: 200px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 780px) {
+    footer .items .item {
+        width: calc(100% - 30px);
+    }
+}
+
+footer .items .item .row {
+    margin-left: -15px;
+    margin-right: -15px;
+    font-size: 0;
+}
+
+footer .items .item .row div {
+    font-size: 1rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    margin-left: 15px;
+    margin-right: 15px;
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% - 30px);
+    background: #f50;
+}
+
+@media screen and (max-width: 780px) {
+    footer .items .item .row div {
+        width: calc(33.33333% - 30px);
+    }
+}
+
+@media screen and (max-width: 560px) {
+    footer .items .item .row div {
+        width: calc(100% - 30px);
+    }
+}
+
+.some .items {
+    min-height: 200px;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.some .items .item {
+    word-wrap: break-word;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.some .items .item-1 {
+    background: #6cc372;
+    width: calc(33.33333% - 30px);
+    padding-right: 0;
+    padding-left: 0;
+    margin-left: 15px;
+}
+
+.some .items .item-2 {
+    background: #d94948;
+    width: calc(66.66667% - 30px);
+    padding-left: 30px;
+    padding-right: 0;
+    margin-right: 15px;
+}
